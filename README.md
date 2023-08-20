@@ -10,7 +10,13 @@ Because LightAPRS 2.0 is open source you can add your own custom sensors via I2C
 
 <img src="images/light-aprs-comparison-table.png" width="800">
 
-LightAPRS 2.0 will be available on http://shop.qrp-labs.com/ for order soon. If you also need WSPR, than check out WSPR+APRS tracker [LightAPRS-W 2.0](https://github.com/lightaprs/LightAPRS-1.0) or LoRa/LoRaWAN only tracker [LightTracker](https://github.com/lightaprs/LightTracker-1.0).
+LightAPRS 2.0 is available on http://shop.qrp-labs.com/aprs/lightaprs2 for order. If you need an APRS+WSPR tracker than checkout:
+
+**LightAPRS-W 1.0:** https://github.com/lightaprs/LightAPRS-W-1.0
+
+**LightAPRS-W 2.0:** https://github.com/lightaprs/LightAPRS-W-2.0
+
+**LoRa/LoRaWAN Tracker:** https://github.com/lightaprs/LightTracker-1.0
 
 <img src="images/lightaprs-2-0-pinout.png" width="600">
 
@@ -28,7 +34,7 @@ LightAPRS 2.0 will be available on http://shop.qrp-labs.com/ for order soon. If 
 - **EEPROM** : N/A
 - **Operating Frequency** : 48 Mhz
 - **Operating Voltage** : 3.3 Volt
-- **Input Voltage** : 2.7 (min) - 16 (max) Volt via USB or VBat pin (Buck-Boost regulator with power good)
+- **Input Voltage** : 2.7 (min) - 6 (max) Volt via USB or VBat pin (Buck-Boost regulator with power good)
 - **BOD** : N/A
 - **Sensor** : BMP180 (pressure and temperature)
 - **VHF Radio Module** : [Dorji DRA818V](http://www.dorji.com/products-detail.php?ProId=55) (included)
