@@ -8,7 +8,7 @@ Because LightAPRS 2.0 is open source you can add your own custom sensors via I2C
 
 **LightAPRS 2.0** is upgraded (powerful) version of [LightAPRS 1.0](https://github.com/lightaprs/LightAPRS-1.0). 
 
-<img src="images/light-aprs-comparison-table.png" width="800">
+<img src="images/light-aprs-comparison-table2.png" width="800">
 
 LightAPRS 2.0 is available on http://shop.qrp-labs.com/aprs/lightaprs2 for order. If you need an APRS+WSPR tracker than checkout:
 
