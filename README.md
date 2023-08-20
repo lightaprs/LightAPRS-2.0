@@ -34,7 +34,7 @@ LightAPRS 2.0 is available on http://shop.qrp-labs.com/aprs/lightaprs2 for order
 - **EEPROM** : N/A
 - **Operating Frequency** : 48 Mhz
 - **Operating Voltage** : 3.3 Volt
-- **Input Voltage** : 2.7 (min) - 16 (max) Volt via USB or VBat pin (Buck-Boost regulator with power good)
+- **Input Voltage** : 2.7 (min) - 6 (max) Volt via USB or VBat pin (Buck-Boost regulator with power good)
 - **BOD** : N/A
 - **Sensor** : BMP180 (pressure and temperature)
 - **VHF Radio Module** : [Dorji DRA818V](http://www.dorji.com/products-detail.php?ProId=55) (included)
