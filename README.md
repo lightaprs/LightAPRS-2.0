@@ -67,6 +67,8 @@ Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software). If 
 
 - Type "Arduino SAMD" in the search bar until you see the **Arduino SAMD Boards (32-Bits Arm Cortex-M0+)** entry and click on it.
 
+**IMPORTANT:** Do not use latest version. Choose version **1.8.12** If you choose latest versions, you may get "**bin/avrdude: bad CPU type in executable**" error.
+
 ![image](https://user-images.githubusercontent.com/48382675/135891280-ad4eb226-dc00-4ff9-8332-a57fa986d16f.png)
 
 - Click **Install** .
