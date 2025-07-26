@@ -84,7 +84,7 @@ void setup() {
   pinMode(PwDwPin, OUTPUT);
   pinMode(PowerHL, OUTPUT);
   
-  GpsOFF;
+  GpsON;
   PttOFF;
   RadioOFF; 
   RfLowPwr;
