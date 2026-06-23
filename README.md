@@ -1,3 +1,5 @@
+This fork removed the telemetry data from the comment and makes it a separate telemetry message that sites like aprs.fi can use to show graphs.  It also adds the ability to send the necessary Telemetry Definition Message to decode the telemetry.  It utilizes a modified ZeroAPRS library.  All other libraries are identical to the originals.
+
 # LightAPRS 2.0 APRS Tracker
 
 LightAPRS 2.0 is one of the most affordable, smallest, lightest, powerful and open source APRS trackers available. It makes tracking pico balloons, weather balloons, model rockets, RC aircrafts and anything else that flies simple and easy.
