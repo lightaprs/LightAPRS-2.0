@@ -1,4 +1,3 @@
-This fork removed the telemetry data from the comment and makes it a separate telemetry message that sites like aprs.fi can use to show graphs.  It also adds the ability to send the necessary Telemetry Definition Message to decode the telemetry.  It utilizes a modified ZeroAPRS library.  All other libraries are identical to the originals.
 
 # LightAPRS 2.0 APRS Tracker
 
