@@ -40,7 +40,7 @@ char    StatusMessage[50] = "LightAPRS 2.0 by TA2NHP & TA2MUN";
 
 //****************************** TELEMETRY CONFIG ******************************
 #define ENABLE_TELEMETRY_DEFS // Transmits PARM, UNIT, EQNS definition messages
-uint16_t TelemetryDefInitialDelay = 2; // Minutes to wait before first transmission
+uint16_t TelemetryDefInitialDelay = 1; // Minutes to wait before first transmission
 uint16_t TelemetryDefInterval = 60;    // Minutes between subsequent transmissions
 //******************************************************************************
 
