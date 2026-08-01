@@ -4,6 +4,8 @@ LightAPRS 2.0 is one of the most affordable, smallest, lightest, powerful and op
 It is able to report location, altitude, temperature and pressure to the internet ([APRS-IS](http://status.aprs2.net)) or direct to an amateur radio once a minute with a solar panel/supercapacitors or just 3xAAA batteries. 
 Because LightAPRS 2.0 is open source you can add your own custom sensors via I2C/SPI pins.
 
+**Important :** If you are planning to launch a High Altitude Balloon (HAB) also consider to check out our new tracker customized for HABs: https://github.com/lightaprs/LightHABTracker-1.0
+
 <img src="images/lightaprs-2-0-front-back.jpg" width="800">
 
 **LightAPRS 2.0** is upgraded (powerful) version of [LightAPRS 1.0](https://github.com/lightaprs/LightAPRS-1.0). 
@@ -12,17 +14,13 @@ Because LightAPRS 2.0 is open source you can add your own custom sensors via I2C
 
 LightAPRS 2.0 is available on http://shop.qrp-labs.com/aprs/lightaprs2 for order. If you need an APRS+WSPR or LoRa APRS (433MHz) tracker than checkout:
 
-**LightHABTracker (AFSK+LoRa) 1.0:** https://github.com/lightaprs/LightHABTracker-1.0
+**LightHABTracker (AFSK+LoRa) 1.0:** https://github.com/lightaprs/LightHABTracker-1.0 (new)
 
-**LightAPRS Gateway (AFSK) 1.0:** https://github.com/lightaprs/LightAPRSGateway-1.0/ (new)
-
-**LightTracker (LoRa APRS) Plus 1.0:** https://github.com/lightaprs/LightTracker-Plus-1.0/
-
-**LightAPRS-W 1.0:** https://github.com/lightaprs/LightAPRS-W-1.0
+**LightAPRS Gateway (AFSK) 1.0:** https://github.com/lightaprs/LightAPRSGateway-1.0/
 
 **LightAPRS-W 2.0:** https://github.com/lightaprs/LightAPRS-W-2.0
 
-**LoRa/LoRaWAN Tracker:** https://github.com/lightaprs/LightTracker-1.0
+**LoRa APRS Tracker:** https://github.com/lightaprs/LightTracker-1.1-433
 
 <img src="images/lightaprs-2-0-pinout.png" width="600">
 
