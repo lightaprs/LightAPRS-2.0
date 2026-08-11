@@ -280,6 +280,36 @@ void APRS_sendStatus(char *msg) {
   APRS_PrepeareStatus(msg);
   APRS_sendpacket();
 }
+
+void APRS_PrepeareMsg(char *msg){
+  uint8_t pos = 0;
+  memset(APRS.TRACK, 0, 200); 
+  APRS_PrepeareCallsign(); 
+  APRS_PrepearePath1();
+  APRS_PrepearePath2();
+  sprintf(APRS.TRACK + pos, "%s", APRS.DST); pos += 7;
+  sprintf(APRS.TRACK + pos, "%s", APRS.CALL); pos += 7;
+  if (APRS.PATH_SIZE > 0) {
+    sprintf(APRS.TRACK + pos, "%s", APRS.PATH1);
+    pos += 7;
+  }
+  if (APRS.PATH_SIZE > 1) {
+    sprintf(APRS.TRACK + pos, "%s", APRS.PATH2);
+    pos += 7;
+  }
+  APRS.TRACK[pos++] = 0x03;
+  APRS.TRACK[pos++] = 0xf0;
+  
+  // This is the critical change for APRS Messages
+  APRS.TRACK[pos++] = ':'; 
+  
+  sprintf(APRS.TRACK + pos, "%s", msg);
+}
+
+void APRS_sendMsg(char *msg) {
+  APRS_PrepeareMsg(msg);
+  APRS_sendpacket();
+}
 /********************************************************
    FM modulation
  ********************************************************/
@@ -413,4 +443,35 @@ void APRS_tcDisable()
 {
   TC5->COUNT16.CTRLA.reg &= ~TC_CTRLA_ENABLE;
   while (APRS_tcIsSyncing());
+}
+
+void APRS_PrepeareTelemetry(char *msg){
+  uint8_t pos = 0;
+  memset(APRS.TRACK, 0, 200); 
+  APRS_PrepeareCallsign(); 
+  APRS_PrepearePath1();
+  APRS_PrepearePath2();
+  sprintf(APRS.TRACK + pos, "%s", APRS.DST); pos += 7;
+  sprintf(APRS.TRACK + pos, "%s", APRS.CALL); pos += 7;
+  if (APRS.PATH_SIZE > 0) {
+    sprintf(APRS.TRACK + pos, "%s", APRS.PATH1);
+    pos += 7;
+  }
+  if (APRS.PATH_SIZE > 1) {
+    sprintf(APRS.TRACK + pos, "%s", APRS.PATH2);
+    pos += 7;
+  }
+  APRS.TRACK[pos++] = 0x03;
+  APRS.TRACK[pos++] = 0xf0;
+  
+  // Data type indicator for Telemetry
+  APRS.TRACK[pos++] = 'T'; 
+  APRS.TRACK[pos++] = '#'; 
+  
+  sprintf(APRS.TRACK + pos, "%s", msg);
+}
+
+void APRS_sendTelemetry(char *msg) {
+  APRS_PrepeareTelemetry(msg);
+  APRS_sendpacket();
 }
